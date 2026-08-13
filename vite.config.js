@@ -25,6 +25,13 @@ export default defineConfig({
       },
 
       output: {
+        entryFileNames: (chunkInfo) => {
+          if (chunkInfo.name === 'cart-element') {
+            return 'assets/cart-element.js';
+          }
+          return 'assets/[name]-[hash].js';
+        },
+
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'mui-vendor': [
