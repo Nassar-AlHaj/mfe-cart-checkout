@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Standalone Vite config for the Cart & Checkout microfrontend.
+// Standalone  config for the Cart & Checkout microfrontend.
 // This app is built and deployed independently of the other microfrontends.
 // `base: './'` keeps asset paths relative so the built bundle can be hosted
 // at any path/subdomain and later embedded by the shell app.
